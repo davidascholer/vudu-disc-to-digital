@@ -13,8 +13,7 @@ import AppContext from '../config/context';
 import Banner from '../assets/images/banner.png';
 
 //Don't call load stripe in render
-// const publishableKey = 'pk_test_51KGmd5BUHT2ct0jdrIeNd4teBNudqF2GK6PdosUgwNZDkhYQrXK0bZd2F7R74rO0fPC7I3BiGZsp3DIeMt4rXqNa00Y5YRd1Zr';
-const publishableKey = 'pk_live_51KGmd5BUHT2ct0jdsivKXNB5O0GF8RZWckzy6aV2fUU16aZTmvHDPkHiOFNG6GB0naWkPet4touv460ASEqsEliw00MGOHaWIm';
+const publishableKey = process.env.REACT_APP_STRIPE_PUBLISHABLE_KEY;
 const stripePromise = loadStripe(publishableKey);
 
 const purchaseOptions = [
@@ -197,5 +196,3 @@ const styles = {
         fontWeight: 400,
     },
 };
-
-//add CardElement @ 9:40

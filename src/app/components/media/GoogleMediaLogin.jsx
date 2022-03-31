@@ -8,7 +8,7 @@ export default function GoogleMediaLogin({ responseGoogle, style }) {
     return (
         <>
             <GoogleLogin
-                clientId="202219569561-vouaqe5ld8p88h5so73624tl43stjb4b.apps.googleusercontent.com"
+                clientId={process.env.REACT_APP_GOOGLE_CLIENT_ID}
                 render={renderProps => (
                     <div
                         style={{...styles.container,...style.container}}

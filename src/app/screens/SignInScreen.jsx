@@ -1,7 +1,6 @@
 import React, { useContext, useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import jwt_decode from "jwt-decode";
-
 //Component imports
 import FormSection from '../components/form/FormSection';
 import AppBackground from '../components/AppBackground';
@@ -17,7 +16,7 @@ import appStyles from '../styles/appStyles';
 import '../styles/fonts.css'
 
 export default function SignInScreen({ navigation }) {
-
+    
     //Routes.
     let navigate = useNavigate();
     //Global settings

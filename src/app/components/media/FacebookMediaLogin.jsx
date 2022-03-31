@@ -8,7 +8,7 @@ export default function FacebookMediaLogin({ responseFacebook, style }) {
     return (
         <>
             <FacebookLogin
-                appId="303864098295051"
+                appId={process.env.REACT_APP_FACEBOOK_APPID}
                 callback={responseFacebook}
                 fields="name,email"
                 render={renderProps => (
