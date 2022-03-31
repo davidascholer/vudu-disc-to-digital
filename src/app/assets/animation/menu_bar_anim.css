@@ -1,0 +1,98 @@
+:root {
+    --animation-time: .3s;
+  }
+
+@keyframes topBarAnimSelected {
+    from {    
+        top:25%;
+        transform: rotate(0turn);
+    }
+    to {
+        top:50%;
+        left:10%;
+        transform: rotate(-.125turn);
+    }
+}
+@keyframes middleBarAnimSelected {
+    0% {    
+        opacity:1;
+    }
+    100% {
+        opacity:0;
+    }
+}
+@keyframes bottomBarAnimSelected {
+    from {    
+        top:75%;
+        transform: rotate(0turn);
+    }
+    to {
+        top:50%;
+        transform: rotate(.125turn);
+    }
+}
+
+.top-bar-anim-selected {
+    animation: topBarAnimSelected var(--animation-time) linear forwards;
+}
+.middle-bar-anim-selected {
+    top:50%;
+    animation: middleBarAnimSelected calc(var(--animation-time)*.5) linear forwards;
+}
+.bottom-bar-anim-selected {
+    animation: bottomBarAnimSelected var(--animation-time) linear forwards;
+}
+
+@keyframes topBarAnimDeselected {
+    from {    
+        top:50%;
+        transform: rotate(-.125turn);
+    }
+    to {
+        top:25%;
+        transform: rotate(0turn);
+    }
+}
+@keyframes middleBarAnimDeselected {
+    0% {    
+        opacity:0;
+    }
+    50% {
+        opacity:.25;
+    }
+    100% {
+        opacity:1;
+    }
+}
+@keyframes bottomBarAnimDeselected {
+    from {    
+        top:50%;
+        transform: rotate(.125turn);
+    }
+    to {
+        top:75%;
+        transform: rotate(0turn);
+    }
+}
+
+.top-bar-anim-deselected {
+    animation: topBarAnimDeselected var(--animation-time) linear forwards;
+}
+.middle-bar-anim-deselected {
+    top:50%;
+    animation: middleBarAnimDeselected var(--animation-time) linear forwards;
+}
+.bottom-bar-anim-deselected {
+    animation: bottomBarAnimDeselected var(--animation-time) linear forwards;
+}
+
+.top-bar-deselected {
+    top:75%;
+}
+.middle-bar-deselected {
+    top:50%;
+}
+.bottom-bar-deselected {
+    top:25%;
+}
+

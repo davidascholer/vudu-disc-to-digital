@@ -1,0 +1,35 @@
+@keyframes input-empty {
+    from {    
+        top: -20%;
+        transform: translateY(0%);
+        font-size:13px
+    }
+    to {
+        top: 50%;
+        transform: translateY(-40%);    
+        font-size:20px
+    }
+}
+
+.input-empty {
+    pointer-events: none;
+    animation: input-empty .3s ease-in forwards;
+}
+
+@keyframes input-content {
+    from {
+        top: 50%;
+        transform: translateY(-40%);
+        font-size:20px
+    }
+    to {
+        top: -20%;
+        transform: translateY(0%);
+        font-size:13px
+    }
+  }
+  
+  .input-content {
+    pointer-events: none;
+    animation: input-content .3s ease-in forwards;
+  }

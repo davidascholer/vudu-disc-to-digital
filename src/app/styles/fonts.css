@@ -1,0 +1,25 @@
+@font-face {
+    font-family: 'fake-proxima-nova-light';
+    src: local('fake-proxima-nova-light'), url(./fonts/fake-proxima-nova-light.woff) format('woff');
+  }
+@font-face {
+    font-family: 'fake-proxima-nova-medium';
+    src: local('fake-proxima-nova-medium'), url(./fonts/fake-proxima-nova-medium.woff) format('woff');
+  }
+@font-face {
+    font-family: 'fake-proxima-nova-bold';
+    src: local('fake-proxima-nova-bold'), url(./fonts/fake-proxima-nova-bold.woff) format('woff');
+  }
+
+  .fontLight {
+    font-family: fake-proxima-nova-light;
+  }
+  .fontMedium {
+    font-family: fake-proxima-nova-medium;
+  }
+  .fontBold {
+    font-family: fake-proxima-nova-bold;
+  }
+  .cambria {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  }

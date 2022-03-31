@@ -1,0 +1,28 @@
+@keyframes sideNavOpen {
+    from {    
+        width:0;
+        min-width:0;
+    }
+    to {
+        width:35vw;
+        min-width:250px;
+    }
+}
+
+.side-nav-open {
+    animation: sideNavOpen var(--animation-time) linear forwards;
+}
+@keyframes sideNavClose {
+    from {    
+        width:35vw;
+        min-width:250px;
+    }
+    to {
+        width:0;
+        min-width:0;
+    }
+}
+
+.side-nav-close {
+    animation: sideNavClose var(--animation-time) linear forwards;
+}
